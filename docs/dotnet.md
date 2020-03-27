@@ -117,7 +117,7 @@ Utilizando qualquer exercício, execute-o no Linux.
 ## Cavaleiro
 
 - É importante que os exercícios sejam feitos em sequência, cada um será um aprendizado diferente e a sequência é evolutiva. Optamos por essa abordagem porque é interessante saber quais os problemas são resolvidos antes de usar o framework direto.
-- Caso não concorde com o uso das ferramentas/frameworks/ideias, por favor, use sua experiencia e argumentos para propor melhorias.
+- Caso não concorde com o uso das ferramentas/frameworks/ideias, por favor, use sua experiência e argumentos para propor melhorias.
 
 
 1. Criar um serviço REST (Web API) e incluir um método GET que receba um CEP e retorne o endereço, o método deve recebe o parâmetro sem
@@ -142,24 +142,24 @@ especificando que essa ação ocorreu. Após a inclusão do registo, pode ser fe
 no caso de CEP enviar os dados do endereço para atualização. No caso de endereço, enviar o CEP para atualização.
 Os serviços dos exercícios 1 e 2 devem contemplar a validação de endereço ou CEP não encontrados e inclusão de um registo. 
 Devem ser criados os testes unitários e de integração para validar a inclusão de um novo endereço e atualização.
-Deve ser utilizado injeção de dependencia para comsumo dos serviços e repositorios. A chamada para atualização e manual.
+Deve ser utilizado injeção de dependência para consumo dos serviços e repositórios. A chamada para atualização e manual.
 
 7. Mudar a integração com banco de dados para ORM utilizando o entity framework core, o mapeamento deve ser feito com fluent 
-e deve conter migration. Manter o repository pattern, essa abstração facilitara a troca de consumo do banco.
+e deve conter migration. Manter o repository pattern, essa abstração facilitará a troca de consumo do banco.
 
 8. Criar uma consulta por UF/Cidade/Bairro/Logradouro, deve consultar também os CEPs cadastrados da base local.
 
 9. Publicar o serviço em algum Cloud Application Platform de sua preferência. Sugestão Heroku usando Docker.
 
-10. Separar a aplicação em dois serviços, o primeiro ficara com parte de integração com o serviço de consulta de CEP, 
-o segundo ficara com a integração com o banco de dados. No segundo serviço será necessário a inclusão de uma consulta.
+10. Separar a aplicação em dois serviços, o primeiro ficará com parte de integração com o serviço de consulta de CEP, 
+o segundo ficará com a integração com o banco de dados. No segundo serviço será necessário a inclusão de uma consulta.
 Os serviços que vão se comunicar entre si, neste momento será via REST. Aplicar o exercício 9.
 
 11. Aprender e aplicar fila de mensageria para a comunicação entre os dois serviços, lembre-se que isso será avaliado 
 então pense bem como usar a fila nesse cenário.
 
 12. Aprender e aplicar serviço de cache distribuído. Existe uma situação em que o cache seria ideal nesse cenário, 
-apenas usar o cache será valido, mas saber como usar será o seu diferencial.
+apenas usar o cache será válido, mas saber como usar será o seu diferencial.
 
 13. Crie uma api gateway, como usar e incluir nesse contexto faz parte da avaliação. Aplicar o exercício 9.
 
